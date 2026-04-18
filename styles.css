@@ -569,14 +569,7 @@ body.modal-open {
   }
 
   .modal-return {
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-  }
-
-  .modal-return img {
-    width: 56px;
-    height: 56px;
+    display: none;
   }
 
   .modal-header {
@@ -590,7 +583,6 @@ body.modal-open {
   }
 
   .hover-preview {
-    width: min(64vw, 280px);
-    left: 50%;
+    display: none;
   }
 }

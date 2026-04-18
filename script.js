@@ -158,6 +158,8 @@ function movePreview(event) {
 }
 
 function showPreview(project, event) {
+  if (window.innerWidth <= 900 || window.matchMedia("(hover: none)").matches) return;
+
   const image = getPreviewImage(project);
 
   if (!image) return;
