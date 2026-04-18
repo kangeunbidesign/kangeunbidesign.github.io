@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Archive</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">P</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Project</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </nav>
+        <button class="topbar-mark" type="button" data-open-about>T</button>
+      </header>
+
+      <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-media">
+            <div class="hero-frame">
+              <div class="hero-overlay"></div>
+              <div class="hero-copy">
+                <p class="eyebrow">Visual Archive 2026</p>
+                <h1 id="hero-title" data-text-lines="Dummy Portfolio|for Ongoing Works">
+                  <span class="hero-title-line"></span><br />
+                  <span class="hero-title-line"></span>
+                </h1>
+                <p class="hero-description">
+                  이미지, 에디토리얼, 오브제, 전시 기록을 한 화면 안에 담아두는 개인 아카이브.
+                </p>
+              </div>
+              <div class="hero-corners hero-corners-left">P</div>
+              <div class="hero-corners hero-corners-right">T</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-stack">
+          <section class="about-card" id="about">
+            <p class="section-label">About</p>
+            <div class="about-grid">
+              <h2>작업을 수집하고 재배열하는 포트폴리오.</h2>
+              <p>
+                더미 텍스트입니다. 사진, 그래픽, 출판, 설치 기록 등 서로 다른 형식의 결과물을
+                하나의 리스트 안에서 탐색할 수 있도록 구성했습니다. 리스트를 누르면 상세 설명이
+                오른쪽 모달에서 전체 화면처럼 펼쳐집니다.
+              </p>
+            </div>
+          </section>
+
+          <section class="project-list-section" id="projects">
+            <div class="list-header">
+              <span>Cargo Test Index</span>
+              <span>Email, IG ↗</span>
+            </div>
+
+            <div class="project-list" role="list">
+              <button
+                class="project-row"
+                type="button"
+                data-project="0"
+                aria-label="Project 014 보기"
+              >
+                <span>014</span>
+                <span>For Rest</span>
+                <span>Brand Design</span>
+                <span>Desk Lamp / Web Cam</span>
+                <span>PDF Pages 5-12</span>
+                <span>2025</span>
+              </button>
+              <button class="project-row" type="button" data-project="1" aria-label="Project 013 보기">
+                <span>013</span>
+                <span>Nobis Amet Ferro</span>
+                <span>Ref. R/PRT-017</span>
+                <span>Folded Announcement Card</span>
+                <span>Lorem Ipsum 79-97</span>
+                <span>2044</span>
+              </button>
+              <button class="project-row" type="button" data-project="2" aria-label="Project 012 보기">
+                <span>012</span>
+                <span>Cursus Nunc Vesto</span>
+                <span>R/CXX-500</span>
+                <span>Art Card</span>
+                <span>Fusce Tera Mundi</span>
+                <span>2043</span>
+              </button>
+              <button class="project-row" type="button" data-project="3" aria-label="Project 011 보기">
+                <span>011</span>
+                <span>Mollis Erat Lento</span>
+                <span>Ref. R/ANV-310</span>
+                <span>Paperback Book</span>
+                <span>Lorem No. 01: Ipsum Dolor</span>
+                <span>2042</span>
+              </button>
+              <button class="project-row" type="button" data-project="4" aria-label="Project 010 보기">
+                <span>010</span>
+                <span>Orci Sed Nivea</span>
+                <span>Ref. R/GLS-744</span>
+                <span>Poster Series</span>
+                <span>Index for Quiet Rooms</span>
+                <span>2041</span>
+              </button>
+              <button class="project-row" type="button" data-project="5" aria-label="Project 009 보기">
+                <span>009</span>
+                <span>Ultrices Mira Cota</span>
+                <span>Ref. R/ZEN-923</span>
+                <span>Installation Notes</span>
+                <span>Dummy Light Archive</span>
+                <span>2040</span>
+              </button>
+              <button class="project-row" type="button" data-project="6" aria-label="Project 008 보기">
+                <span>008</span>
+                <span>Habitant Flux Mora</span>
+                <span>Ref. R/OPL-220</span>
+                <span>Editorial Mockup</span>
+                <span>Soft Bound Studies</span>
+                <span>2039</span>
+              </button>
+              <button class="project-row" type="button" data-project="7" aria-label="Project 007 보기">
+                <span>007</span>
+                <span>Pharetra Nox Meli</span>
+                <span>Ref. R/VST-501</span>
+                <span>Research Folder</span>
+                <span>Notes for Invisible Shapes</span>
+                <span>2038</span>
+              </button>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <aside class="side-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <button class="modal-return" type="button" data-close-modal aria-label="메인 화면으로 돌아가기">
+        <img src="./Vector 2.png" alt="" />
+      </button>
+      <section class="modal-panel" aria-labelledby="modal-title">
+        <div class="modal-header">
+          <p class="section-label">Project View</p>
+          <button class="modal-close" type="button" data-close-modal aria-label="모달 닫기">
+            Close
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-visual">
+            <div class="modal-visual-inner">
+              <p class="eyebrow" id="modal-meta">Dummy series</p>
+              <h2 id="modal-title">Velit Magna Porta</h2>
+            </div>
+          </div>
+          <div class="modal-copy">
+            <p id="modal-year">2045</p>
+            <p id="modal-format">
+              Pamphlet / Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere nunc at
+              velit gravida, ut finibus nisl gravida.
+            </p>
+            <p id="modal-description">
+              프로젝트 더미 설명입니다. 실제 작업 소개, 사용한 매체, 전시 맥락, 제작 기간 같은
+              내용을 이 영역에 채워 넣을 수 있습니다. 현재는 레이아웃 확인을 위한 샘플 문장으로
+              구성되어 있습니다.
+            </p>
+          </div>
+          <div class="modal-gallery" id="modal-gallery"></div>
+        </div>
+      </section>
+    </aside>
+
+    <div class="hover-preview" aria-hidden="true">
+      <img class="hover-preview-image" alt="" />
+    </div>
+
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
